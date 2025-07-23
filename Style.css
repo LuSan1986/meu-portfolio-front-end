@@ -1,0 +1,81 @@
+ /* Importa duas fontes do Google Fonts: Krona One e Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+/* Estilização do corpo da página */
+body {
+    height: 100vh; /* Define a altura do body como 100% da altura visível da janela do navegador */
+    box-sizing: border-box; /* Faz com que padding e bordas sejam incluídos nas dimensões totais dos elementos */
+    background: linear-gradient(to right, #1e1e3f, #2a1a40); /* Aplica um fundo com gradiente horizontal, do azul escuro para o roxo escuro */
+    color: #e0e0e0; /* Define a cor padrão do texto como cinza claro */
+    margin: 0; /* Remove qualquer margem padrão do navegador */
+    padding: 0; /* Remove qualquer padding padrão do navegador */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte padrão para todo o texto (fallbacks incluídos) */
+}
+
+/* Classe para destaque de título com cor azul ciano */
+.titulo-destaque {
+    color: #22d4fd; /* Azul claro (ciano) */
+}
+
+/* Classe para destaque de parágrafo com mesma cor do título */
+.paracrafo-destaque {
+    color: #22d4fd; /* Azul claro (ciano) */
+}
+
+/* Container principal da apresentação */
+.apresentacao {
+    margin: 15%; /* Margem ao redor do container, em todos os lados */
+    display: flex; /* Usa Flexbox para alinhar os elementos filhos */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Espaça os itens igualmente, com espaço entre eles */
+}
+
+/* Seção de conteúdo textual dentro da apresentação */
+.apresentacao__conteudo {
+    width: 593px; /* Largura fixa do conteúdo textual */
+    display: flex; /* Usa Flexbox para alinhar os elementos filhos */
+    flex-direction: column; /* Alinha os itens em coluna */
+  
+    
+}
+
+/* Título do conteúdo da apresentação */
+.apresentacao__conteudo__titulo {
+    font-size: 36px; /* Tamanho grande para destaque */
+    font-family: 'Krona One', sans-serif; /* Usa a fonte decorativa Krona One */
+}
+
+/* Parágrafo dentro do conteúdo da apresentação */
+.apresentacao__conteudo__paragrafo {
+    font-size: 20px; /* Tamanho de fonte confortável para leitura */
+    font-family: 'Montserrat', sans-serif; /* Usa a fonte Montserrat para leitura fluida */
+}
+
+/* Container que agrupa os links de redes sociais */
+.apresentacao__conteudo__redes-sociais {
+    display: flex; /* Usa Flexbox para posicionar os links lado a lado */
+    justify-content: space-between; /* Espaça igualmente os links */
+    margin-top: 20px; /* Espaço acima do grupo de links */
+    font-size: 20px; /* Tamanho padrão do texto nos links */
+    font-family: 'Montserrat', sans-serif; /* Fonte moderna e legível */
+}
+
+/* Estilo individual para cada link de rede social */
+.apresentacao__links__link {
+    background-color: #22d4fd; /* Cor de fundo azul ciano */
+    width: 150px; /* Largura fixa do botão/link */
+    text-align: center; /* Centraliza o texto dentro do link */
+    border-radius: 16px; /* Bordas arredondadas */
+    font-size: 24px; /* Tamanho da fonte maior para destaque */
+    font-weight: 600; /* Deixa o texto em negrito moderado */
+    color: black; /* Define a cor do texto como preta */
+    text-decoration: none; /* Remove sublinhado do link */
+    padding: 21.5px; /* Espaçamento interno para aumentar a área clicável */
+    display: inline-block; /* Permite aplicar largura, altura e padding corretamente */
+    font-family: 'Montserrat', sans-serif; /* Usa a fonte Montserrat para consistência visual */
+}
+
+/* Efeito ao passar o mouse sobre os links */
+.apresentacao__links__link:hover {
+    background-color: #1a9bbf; /* Muda a cor de fundo para azul mais escuro quando o usuário passa o mouse */
+}
