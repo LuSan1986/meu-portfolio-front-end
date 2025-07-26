@@ -13,31 +13,57 @@
 
     <!-- Título da página que aparece na aba do navegador -->
     <title>Portfolio de Luciano Santana O</title>
+    
     <!-- Importa o arquivo de estilo externo chamado "Style.css", que define o visual da página -->
     <link rel="stylesheet" href="Style.css">
-
+</head>
 
 <!-- Corpo da página: onde o conteúdo visível será colocado -->
 <body>
-      <!-- Cabeçalho da página: geralmente contém logo, menu de navegação e título -->
-      <header></header>
+    <!-- Cabeçalho da página: geralmente contém logo, menu de navegação e título -->
+    <header></header>
 
-      <!-- Conteúdo principal da página: a parte mais importante, como textos, seções e imagens -->
-      <main class="apresentacao">
+    <!-- Conteúdo principal da página: a parte mais importante, como textos, seções e imagens -->
+    <main class="apresentacao">
         <section class="apresentacao__conteudo">
-          <h1 class="apresentacao__conteudo__titulo"> Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um Front-end de qualidade!</strong></h1>
-          <p class="apresentacao__conteudo__paragrafo"> Olá! Sou Luciano Santana, desenvolvedor Front-end com especialidade em <strong class = "paracrafo-destaque"> React, HTML e CSS </strong> . Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
-          <div class = 'apresentacao__conteudo__redes-sociais'>
-            <a class = "apresentacao__links__link" href="https://www.linkedin.com/in/luciano-santana-a12a89142/">Linkedin</a>
-            <a class ="apresentacao__links__link" =href="https://github.com/LuSan1986">Github </a>
-          </div>
+            <h1 class="apresentacao__conteudo__titulo">
+                Eleve seu negócio digital a outro nível 
+                <strong class="titulo-destaque">com um Front-end de qualidade!</strong>
+            </h1>
+            <p class="apresentacao__conteudo__paragrafo">
+                Olá! Sou Luciano Santana, desenvolvedor Front-end com especialidade em 
+                <strong class="paracrafo-destaque"> React, HTML e CSS </strong>. 
+                Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?
+            </p>
+            <div class='apresentacao__conteudo__redes-sociais'>
+                <a class="apresentacao__links__link" href="https://www.linkedin.com/in/luciano-santana-a12a89142/" target="_blank">Linkedin</a>
+                <a class="apresentacao__links__link" href="https://github.com/LuSan1986" target="_blank">Github</a>
+            </div>
         </section>
-        <img src="IMG-20250501-WA0034.jpg" alt="Foto do Luciano Santana aprendendo HTML" width="304" height="342">
-       
-      </main>
-  
-      <!-- Rodapé da página: costuma conter informações como direitos autorais, links de contato ou redes sociais -->
-      <footer></footer>
+        <img src="imagem.jpg" alt="Foto do Luciano Santana aprendendo HTML" width="320" height="380">
+    </main>
+
+    <!-- Rodapé da página: costuma conter informações como direitos autorais, links de contato ou redes sociais -->
+    <footer></footer>
+
+    <!-- Inserção do código JavaScript ao final do body -->
+    <script>
+        // Exibe uma mensagem de boas-vindas assim que o usuário abre a página
+        window.onload = function() {
+            alert("Bem-vindo ao portfólio de Luciano Santana!");
+        };
+
+        // Seleciona todos os links com a classe 'apresentacao__links__link'
+        const links = document.querySelectorAll('.apresentacao__links__link');
+
+        // Para cada link encontrado, adiciona um evento de clique
+        links.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                // Exibe uma mensagem no clique, antes de redirecionar
+                alert(`Você está saindo do site para visitar: ${link.textContent}`);
+            });
+        });
+    </script>
 </body>
 
 <!-- Fim do documento HTML -->
